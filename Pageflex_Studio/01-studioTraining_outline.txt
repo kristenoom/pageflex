@@ -1,0 +1,28 @@
+Pageflex(R) Studio Training Outline
+
+Pageflex(R) Studio allows companies to begin offering sophisticated variable data printing services very quickly. It enables database-driven, one-to-one business collateral and other personalized print documents and email that leverage valuable customer information, enabling powerful communication.
+
+You will learn how to create projects, build templates, define and apply variables, use scripts, define output job parameters, preview jobs against a database, and use document actions to add functionality. During the class you will work on projects involving a flyer, postcards, and a variable-length document.
+
+
+Day 1 - Demonstrations & Studio Basics
+Starting with a hands-on "best practices" tour of Pageflex Studio. Students learn how to create projects, build templates, define and apply variables, define output job parameters as well as preview jobs against a database in Studio. Students will complete a template that utilizes scripts as well as simple imposition and document actions.
+
+Lessons:
+* Overview of Pageflex variable-data publishing
+* Navigating Studio
+* Defining Variables
+* Groups & Flexing
+* Project: Native Studio Files
+* Scripts
+* Troubleshooting
+
+Day 2 - Studio Projects & Variable Data Project Planning
+Continuing with a tutorial illustrating dynamic-length document functionality including auto-chain text boxes, document variables, filler pages and tables of contents. Students will then discuss project planning and learn to identify what variable data projects need. The materials they identify will be provided and they will build a postcard project from the ground up. The class will finish with a discussion of output, document actions, and workflow.
+Lessons:
+* Project: Dynamic Length Documents
+* Variable Data Project Planning
+* Project: Creating a Variable Data Postcard
+* Output Setup
+* Document Actions
+* Documentation & Resources
