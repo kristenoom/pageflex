@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Email Design Guide</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 850px;
+        }
+        .center {
+            text-align: center;
+        }
+        h1.center {
+            margin-bottom: 0;
+        }
+        p.center {
+            margin-top: 0;
+        }
+        div {
+            background-color: black;
+            margin-left: 15px;
+            width: 500px;
+        }
+        div p span, div span {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body width="750px">
+    <h1 class="center">HTML Email Design Guide</h1>
+    <p class="center">Use this document as a guideline when designing HTML emails</p>
+
+    <section>
+        <h3>Design Using a Simple Layout</h3>
+        <p>The simpler the design of your HTML email, the easier it is to code. A simple layout will minimize inconsistencies across multiple email clients. Base designs on simple layouts consisting of the following content in the header, body, and footer sections:
+            <br>
+            <ul>
+                <li><b>Header:</b> logo, image, link to web version</li>
+                <li><b>Body:</b> message (offer)</li>
+                <li><b>Footer:</b> company address, phone number, reminder of opt in, privacy policy, <span style="color:red;">unsubscribe link *REQUIRED*</span></li>
+            </ul>
+        </p>
+    </section>
+    
+    <section>
+        <h3>Design with Tables (and Set Width of Each Cell)</h3>
+        <p>Email clients disregard most, if not all, web design standards. Because of this, designing your HTML email using tables is the best way to ensure that your design will be rendered by your recipients' email client accurately. Additionally, when coding your design, specify the width of each slice within its corresponding cell.</p>
+        <p><strong>Example</strong></p>
+        <div style="background-color: black; font-family:Courier New, serif; font-size: 12px; padding: 5px; width: 400px;">
+            <p style="color:aqua; margin:0;">
+                &lt;table&gt;
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&lt;tr&gt;
+            </p>
+            <p style="margin:0;">
+                <span style="color:aqua;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&nbsp;</span>
+                <span style="color:gold;">width=</span><span style="color:rgb(59, 190, 98);">"600px"</span>
+                <span style="color:aqua;">&gt;</span>
+                <span style="color:white;">Header</span>
+                <span style="color:aqua;">&lt;/td&gt;</span>
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&lt;/tr&gt;
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&lt;tr&gt;
+            </p>
+            <p style="color:aqua; margin:0;">
+                <span style="color:aqua;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&nbsp;</span><span style="color:gold;">width=<span style="color:rgb(59, 190, 98);">"600px"</span></span><span style="color:aqua;">&gt;</span><span style="color:white;">Body</span><span style="color:aqua;">&lt;/td&gt;</span>
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&lt;/tr&gt;
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&lt;tr&gt;
+            </p>
+            <p style="margin:0;">
+                <span style="color:aqua;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&nbsp;</span><span style="color:gold;">width=<span style="color:rgb(59, 190, 98);">"600px"</span></span><span style="color:aqua;">&gt;</span><span style="color:white;">Footer</span><span style="color:aqua;">&lt;/td&gt;</span>
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&lt;/tr&gt;
+            </p>
+            <p style="color:aqua; margin:0;">
+                &lt;/table&gt;
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h3>Design within 600 pixels</h3>
+        <p>Many recipients will only view your email within their preview pane. Preview panes are usually no larger than 600 pixels wide; most are significantly smaller than this. Therefore, you will want the staples of your email (logo, company name, image, slogan) to be readily viewable within these small windows.</p>
+        <p><strong>Example</strong></p>
+        <div style="background-color: black; font-family:Courier New, serif; font-size: 12px; padding: 5px; width: 400px;">
+            <p style="color:aqua; margin:0;">
+                <span style="color:aqua; margin:0;">&lt;table&nbsp;</span><span style="color:gold;">width=</span><span style="color:rgb(59, 190, 98);">"600px"</span><span style="color:gold;"> align=</span><span style="color:rgb(59, 190, 98);">"center"</span>
+                <span style="color:aqua; margin:0;">&gt;</span>
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&lt;tr&gt;
+            </p>
+            <p style="margin:0;">
+                <span style="color:aqua;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;</span><span style="color:white;">Header</span><span style="color:aqua;">&lt;/td&gt;</span>
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&lt;/tr&gt;
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&lt;tr&gt;
+            </p>
+            <p style="color:aqua; margin:0;">
+                <span style="color:aqua;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;</span><span style="color:white;">Body</span><span style="color:aqua;">&lt;/td&gt;</span>
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&lt;/tr&gt;
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&lt;tr&gt;
+            </p>
+            <p style="margin:0;">
+                <span style="color:aqua;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;</span><span style="color:white;">Footer</span><span style="color:aqua;">&lt;/td&gt;</span>
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&lt;/tr&gt;
+            </p>
+            <p style="color:aqua; margin:0;">
+                &lt;/table&gt;
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h3>For Background Color - Design with a 100% Width Table</h3>
+        <p>In order to add a background color to your design, you will have to wrap your entire document within a separate table, set the table width to 100%, and then specify the background color for the outer table. The downside of incorporating a background into your design is that recipients' responses will reside outside of the background table, potentially resulting in difficulty viewing the message.</p>
+        <div>
+            <p style="color:aqua; margin:0;">
+                <span style="color:aqua; margin:0;">&lt;table&nbsp;</span><span style="color:gold;">width=</span><span style="color:rgb(59, 190, 98);">"600px"</span><span style="color:gold;"> background-color=</span><span style="color:rgb(59, 190, 98);">"blue"</span>
+                <span style="color:aqua; margin:0;">&gt;</span>
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&lt;tr&gt;
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&lt;td&gt;
+            </p>
+            <p style="color:aqua; margin:0;">
+                <span style="color:aqua; margin:0;">&nbsp;&lt;table&nbsp;</span><span style="color:gold;">width=</span><span style="color:rgb(59, 190, 98);">"600px"</span><span style="color:gold;"> align=</span><span style="color:rgb(59, 190, 98);">"center"</span>
+                <span style="color:aqua; margin:0;">&gt;</span>
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&nbsp;&lt;tr&gt;
+            </p>
+            <p style="margin:0;">
+                <span style="color:aqua;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;</span><span style="color:white;">Header</span><span style="color:aqua;">&lt;/td&gt;</span>
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&nbsp;&lt;tr&gt;
+            </p>
+            <p style="color:aqua; margin:0;">
+                <span style="color:aqua;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;</span><span style="color:white;">Body</span><span style="color:aqua;">&lt;/td&gt;</span>
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&nbsp;&lt;tr&gt;
+            </p>
+            <p style="margin:0;">
+                <span style="color:aqua;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;</span><span style="color:white;">Footer</span><span style="color:aqua;">&lt;/td&gt;</span>
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&lt;/tr&gt;
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&lt;/table&gt;
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&lt;/td&gt;
+            </p>
+            <p style="color:aqua; margin:0;">
+                &nbsp;&nbsp;&lt;/tr&gt;
+            </p>
+            <p style="color:aqua; margin:0;">
+                &lt;/table&gt;
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h3>Include a Link to a Web Version of Your Email</h3>
+        <p>By supplying a link to a web version of your email, recipients who use email clients with limitations, such as Microsoft Outlook Web Access, will have an alternative method to view your email in its entirety. To allow recipients access to a web version of your emil, include a link, such as the following:</p>
+        <p><strong>Example</strong></p>
+        <p>Cannot see this email? View in browser.<br>
+        <em>(Note: This will require a high complexity email.)</em></p>
+    </section>
+
+    <section>
+        <h3>Include an Unsubscribe Link</h3>
+        <p>The CAN-SPAM Act of 2003 established a set of requirements for commercial email development, one of which is to allow recipients a way to opt out of receiving your emails. Include a link for recipients to unsubscribe from your list, such as the following:</p>
+        <p><strong>Example</strong></p>
+        <ul>
+            <li>If you no longer wish to receive email from My Company, please click unsubscribe <u>here</u>.</li>
+            <li>My Company sent this email to name@yahoo.com. If you no longer wish to receive email newsletters and offers from us, you can <u>unsubscribe</u>.</li>
+            <li>We received your address from XYZ. Click here to <u>opt out</u>.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Do Not List</h3>
+        <ul>
+            <li>Use external CSS</li>
+            <li>Use CSS styling in Header</li>
+            <li>Use JavaScript, Videos, Flash</li>
+            <li>Use Background Images</li>
+            <li>Use shorthand for styling text (or hex code)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Do List</h3>
+        <ul>
+            <li>Use inline CSS</li>
+            <li>Use alt tags in images</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Straightforward Subject Lines</h3>
+        <p>Describing the contents of your email is the best way to maintain legitimacy among recipients and spam filters. Your customers receive tons of email on a daily basis, so a straightfoward description will ensure that recipients accurately weigh the value of your email. Additionally, a straightfoward title for your email will differentiate you from spammers, who commonly use creative, and sometimes misspelled, headings in their subject line. Furthermore, straightforward subject lines have seen higher open and conversion rates.</p>
+        <p><strong>Example</strong></p>
+        <p>If your HTML email is offering a coupon for doggy treats, your subject line should resemble the following:<br>
+        <em>Company Name - Coupon for Doggy Treats</em></p>
+    </section>
+    <section>
+        <h3>Words, Phrases, and Styling to Avoid</h3>
+        <p>Spam filters utilize a series of checks for words, phrases, and type styles commonly used by spammers. Each content component is assigned a point value, and once an email surpasses a point threshold set by the recipient's email client, the message is sent to the spam folder.</p>
+        <h4>Do not do the following:</h4>
+        <ul>
+            <li>ALL CAPS</li>
+            <li>!!!!!!!!!!!! (Lots of exclamation points)</li>
+            <li>Multiple color text</li>
+        </ul>
+        <h4>Do not use the following:</h4>
+        <ul>
+            <li><u>Free</u> before anything (e.g. Free trial)</li>
+            <li>Act Now!</li>
+            <li>Risk free</li>
+            <li>Call now</li>
+            <li>Join millions</li>
+            <li><u>No</u> before anything (e.g. No gimmick, no money down, no fee)</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Additional Resources</h3>
+        <p>To learn more about spam filters and to check your email's spam filter score, please reference the following websites:<br>
+            <strong>SpamAssassin</strong> - <a href="https://spamassassin.apache.org/" target="_blank">https://spamassassin.apache.org/</a><br>
+            <strong>MailingCheck</strong> - <a href="https://mailingcheck.com/" target="_blank">https://mailingcheck.com</a>
+        </p>
+    </section>
+</body>
+</html>
