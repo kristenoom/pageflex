@@ -1,0 +1,7 @@
+Pageflex(R) Storefront Training Outline
+
+Storefront enables you to define, auto-generate, and manage attractive Web-to-Print document customization sites. With Storefront, you can quickly and easily launch a Web-to-Print business where your customers can customize marketing, advertising, and other documents through an online self-service system.
+
+After completion of training, student will understand the fundamentals of building projects in a variable-data document customization workflow. The class covers how to build templates in Pageflex(R) Studio, define and appy variables and define template container permissions and constraints. After building a project, students will then learn how to upload the project into Storefront and build a web portal from the ground up.
+
+The class begins with an overview demonstration of a Storefront portal and finishes with students creating their own Storefront web portal using the simple brower-based administrator tool to set up.
