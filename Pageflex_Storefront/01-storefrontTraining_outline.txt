@@ -5,3 +5,55 @@ Storefront enables you to define, auto-generate, and manage attractive Web-to-Pr
 After completion of training, student will understand the fundamentals of building projects in a variable-data document customization workflow. The class covers how to build templates in Pageflex(R) Studio, define and appy variables and define template container permissions and constraints. After building a project, students will then learn how to upload the project into Storefront and build a web portal from the ground up.
 
 The class begins with an overview demonstration of a Storefront portal and finishes with students creating their own Storefront web portal using the simple brower-based administrator tool to set up.
+
+Day 1 - Demonstrations & Studio Basics
+Starting with a hands-on "best practices" tour of Pageflex Studio. Students learn how to create projects, build templates, define and apply variables, define output job parameters as well as preview jobs against a database in Studio. Students will complete a template that utilizes scripts as well as simple imposition and document actions.
+
+Lessons:
+* Overview of Pageflex variable-data publishing
+* Navigating Studio
+* Defining Variables
+* Groups & Flexing
+* Project: Native Studio Files
+* Scripts
+* Troubleshooting
+
+Day 2 - Postcard Project & Storefront Installation
+Continuing with a tutorial illustrating dynamic-length document functionality including auto-chain text boxes, document variables, filler pages and tables of contents. Students will then discuss project planning and learn to identify what variable data projects need. The materials they identify will be provided and they will build a postcard project from the ground up. The class will finish with a discussion of output, document actions, and workflow.
+Lessons:
+* Project: Dynamic Length Documents
+* Variable Data Project Planning
+* Project: Creating a Variable Data Postcard
+* Output Setup
+* Document Actions
+* Documentation & Resources
+
+Day 3 - Storefront Administration
+Starts with creating a sample Storefront deployment. Students will have their first opportunity to work in the Storefront Administrator website, creating user profiles and accounts. They will then learn how to upload their postcard project and configure the workflow options for document customization and personalization including including data lists, printing options and pricing tables.
+Lessons:
+* Review a sample Storefront deployment
+* Create a new deployment
+* Adding an admin user
+* Admins and Users Accounts
+* Groups and Access Privileges
+* Create a New Variable Product
+* Customize Product Workflow Steps
+* Staged content
+* Global Libraries
+* Price Tables & Taxes
+* Order Management
+
+Day 4 - Storefront Administration
+Finishes with Storefront deployment-wide administration settings, including order workflow, admin privileges, site skinning, and notifications. Students will have an opportunity to return to Studio to change the original postcard project, returning to Storefront to test and release versions. Students will create other kinds of Storefront products — hosted PDF products and user-uploaded PDF documents. We will explore integrated Extensions. Class will finish with a tour of our Pageflex Support portal and an introduction to the Support material available online.Lessons:
+* Notifications
+* Approvals
+* Checkout Options
+* Shipping and Payment Setup
+* Logs
+* Finance Management
+* Hosted PDF and User-Uploaded PDF Products
+* Site Skinning and Localization
+* Database Tools
+* Extension Management
+* Kits
+* Custom Steps
